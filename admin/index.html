@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Access Solutions">
+  <title>Nigerian National Petroleum Corporation : Recruitment Admin Console </title>
+  <!-- Favicon 
+  <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">-->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <!-- main CSS -->
+  <link type="text/css" href="./assets/css/main.css?v=1.0.0" rel="stylesheet">
+  <link type="text/css" href="./assets/css/sidebar.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Sidenav -->
+  <div class="page-wrapper chiller-theme toggled">
+      <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand text-center">
+            <a href="#">
+              <img src="./assets/img/brand/logo.png">
+            </a>
+            <div id="close-sidebar">
+              <i class="fas fa-angle-left"></i>
+            </div>
+          </div>
+          <div class="sidebar-header">
+            <div class="user-pic">
+              <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                alt="User picture">
+            </div>
+            <div class="user-info">
+              <span class="user-name">NNPC
+                <strong>Manager</strong>
+              </span>
+              <span class="user-role">Administrator</span>
+            </div>
+          </div>
+          <!-- sidebar-header  -->
+
+          <div class="sidebar-menu">
+            <ul>
+              <li class="">
+                <a href="#">
+                  <i class="fa fa-tachometer-alt"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-users"></i>
+                  <span>User Ops</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Applicants' List
+    
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="far fa-gem"></i>
+                  <span>Administrative Ops</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Assign Applicants to Reviewer</a>
+                    </li>
+                    <li>
+                      <a href="#">Certificate Requirements</a>
+                    </li>
+                    <li>
+                      <a href="#">User List</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-chart-line"></i>
+                  <span>General Ops</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Change Password</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-power-off"></i>
+                  <span>Logout</span>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+        <!-- sidebar-content  -->
+
+      </nav>
+      <!-- sidebar-wrapper  -->
+      <main class="page-content">
+          <!-- Main content -->
+  <div class="pagy-content">
+      <!-- Top navbar -->
+      <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+        <div class="container-fluid">
+          <!-- Brand -->
+          <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" style="margin-left: 20px;" href="#">Dashboard</a>
+          <!-- Form -->
+          <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+            <div class="form-group mb-0">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+                <input class="form-control" placeholder="Search" type="text">
+              </div>
+            </div>
+          </form>
+          <!-- User -->
+          <ul class="navbar-nav align-items-center d-none d-md-flex">
+            <li class="nav-item dropdown">
+              <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media align-items-center">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <img alt="Image placeholder" src="./assets/img/icons/nnpc-icon.png">
+                  </span>
+                  <div class="media-body ml-2 d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">NNPC Management</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                <div class=" dropdown-header noti-title">
+                  <h6 class="text-overflow m-0">Welcome!</h6>
+                </div>
+                <a href="#" class="dropdown-item">
+                  <i class="ni ni-single-02"></i>
+                  <span>My profile</span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <i class="ni ni-settings-gear-65"></i>
+                  <span>Settings</span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <i class="ni ni-calendar-grid-58"></i>
+                  <span>Activity</span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <i class="ni ni-support-16"></i>
+                  <span>Support</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-user-run"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Header -->
+      <div class="header pb-8 pt-5 pt-md-8">
+        <div class="container-fluid">
+          <div class="header-body">
+            <!-- Card stats -->
+            <div class="row">
+              <div class="col-xl-3 col-lg-6">
+                <div class="card card-stats mb-4 mb-xl-0">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <h5 class="card-title text-uppercase text-muted mb-0">Total Applicants</h5>
+                        <span class="h2 font-weight-bold mb-0">16</span>
+                      </div>
+                      <div class="col-auto">
+                        <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                          <i class="fas fa-chart-bar"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mt-3 mb-0 text-muted text-sm">
+                      <span class="text-nowrap">Completed</span>
+                      <span class="text-success mr-2 pull-right"> 3</span><br>
+                      <span class="text-nowrap">Uncompleted</span>
+                      <span class="text-success mr-2">16</span><br>
+                      <span class="text-nowrap"><small> At 2019-02-13</small> </span>
+                      <span class="text-success mr-2">
+                        <a href="#" class="btn btn-sm btn-success"><i class="fas fa-sync-alt"></i> Reload</a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6">
+                <div class="card card-stats mb-4 mb-xl-0">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <h5 class="card-title text-uppercase text-muted mb-0">Pending Reviewss</h5>
+                        <span class="h2 font-weight-bold mb-0">3</span>
+                      </div>
+                      <div class="col-auto">
+                        <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                          <i class="fas fa-chart-pie"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mt-3 mb-0 text-muted text-sm">
+                        <span class="text-nowrap"><small> At 2019-02-13</small> </span>
+                        <span class="text-success mr-2">
+                          <a href="#" class="btn btn-sm btn-success"><i class="fas fa-sync-alt"></i> Reload</a>
+                        </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6">
+                <div class="card card-stats mb-4 mb-xl-0">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <h5 class="card-title text-uppercase text-muted mb-0">Flagged Applicants</h5>
+                        <span class="h2 font-weight-bold mb-0">0</span>
+                      </div>
+                      <div class="col-auto">
+                        <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                          <i class="fas fa-users"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mt-3 mb-0 text-muted text-sm">
+                        <span class="text-nowrap"><small> At 2019-02-13</small> </span>
+                        <span class="text-success mr-2">
+                          <a href="#" class="btn btn-sm btn-success"><i class="fas fa-sync-alt"></i> Reload</a>
+                        </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6">
+                <div class="card card-stats mb-4 mb-xl-0">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <h5 class="card-title text-uppercase text-muted mb-0">Shortlisted Applicants</h5>
+                        <span class="h2 font-weight-bold mb-0">0</span>
+                      </div>
+                      <div class="col-auto">
+                        <div class="icon icon-shape bg-info text-white rounded-circle shadow">
+                          <i class="fas fa-percent"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mt-3 mb-0 text-muted text-sm">
+                        <span class="text-nowrap"><small> At 2019-02-13</small> </span>
+                        <span class="text-success mr-2">
+                          <a href="#" class="btn btn-sm btn-success"><i class="fas fa-sync-alt"></i> Reload</a>
+                        </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page content -->
+      <div class="container-fluid mt--7">
+        <div class="row">
+          <div class="col-xl-4">
+              <div class="card shadow">
+                <div class="card-header bg-transparent">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <h2 class="mb-0">Applicant Status</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <!-- Chart -->
+                  <div class="chart">
+                      <!-- Place Chart here-->
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="card shadow">
+                  <div class="card-header bg-transparent">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <h2 class="mb-0">State Distribution</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <!-- Chart -->
+                    <div class="chart">
+                      <!-- Place Chart here-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <div class="col-xl-4">
+            <div class="card shadow">
+              <div class="card-header bg-transparent">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h2 class="mb-0">Reviewer's activity funnel</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+              <!-- Chart -->
+              <div class="chart">
+                  <!-- Place Chart here-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-xl-12 mb-5 mb-xl-0">
+            <div class="card shadow">
+              <div class="card-header border-0">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h3 class="mb-0">Registration Summary By States</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="chart">
+                <!-- chart goes here -->
+  
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        <!-- Reg by Geop political Zone-->
+        <div class="row mt-5">
+            <div class="col-xl-12 mb-5 mb-xl-0">
+              <div class="card shadow">
+                <div class="card-header border-0">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <h3 class="mb-0">Registration Summary By Geopolitical Zones</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart">
+                  <!-- chart goes here -->
+    
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="row align-items-center justify-content-xl-between">
+            <div class="col-xl-6">
+              <div class="copyright text-center text-xl-left text-muted">
+                &copy; 2019 Nigerian National Petroleum Corporation 
+              </div>
+            </div>
+            <div class="col-xl-6">
+  
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    
+      </main>
+      <!-- page-content" -->
+    </div>
+
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Optional JS -->
+  <script src="./assets/js/sidebar.js"></script>
+  <!-- Argon JS -->
+  <script src="./assets/js/main.js?v=1.0.0"></script>
+</body>
+
+</html>
