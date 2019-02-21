@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Access Solutions">
+  <title>Nigerian National Petroleum Corporation : Recruitment Admin Console </title>
+  <!-- Favicon 
+  <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">-->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <!-- main CSS -->
+  <link type="text/css" href="./assets/css/main.css?v=1.0.0" rel="stylesheet">
+  <link type="text/css" href="./assets/css/sidebar.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Sidenav -->
+  <div class="page-wrapper chiller-theme toggled">
+      <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand text-center">
+            <a href="#">
+              <img src="./assets/img/brand/logo.png">
+            </a>
+            <div id="close-sidebar">
+              <i class="fas fa-angle-left"></i>
+            </div>
+          </div>
+          <div class="sidebar-header">
+            <div class="user-pic">
+              <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                alt="User picture">
+            </div>
+            <div class="user-info">
+              <span class="user-name">NNPC
+                <strong>Manager</strong>
+              </span>
+              <span class="user-role">Administrator</span>
+            </div>
+          </div>
+          <!-- sidebar-header  -->
+
+          <div class="sidebar-menu">
+            <ul>
+              <li class="">
+                <a href="#">
+                  <i class="fa fa-tachometer-alt"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar-dropdown active">
+                <a href="#">
+                  <i class="fa fa-users"></i>
+                  <span>User Ops</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Applicants' List
+    
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="far fa-gem"></i>
+                  <span>Administrative Ops</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Assign Applicants to Reviewer</a>
+                    </li>
+                    <li>
+                      <a href="#">Certificate Requirements</a>
+                    </li>
+                    <li>
+                      <a href="#">User List</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-chart-line"></i>
+                  <span>General Ops</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Change Password</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-power-off"></i>
+                  <span>Logout</span>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+        <!-- sidebar-content  -->
+
+      </nav>
+      <!-- sidebar-wrapper  -->
+      <main class="page-content">
+          <!-- Main content -->
+  <div class="pagy-content">
+      <!-- Top navbar -->
+      <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+        <div class="container-fluid">
+          <!-- Brand -->
+          <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" style="margin-left: 20px;" href="#">Certificate Requirements</a>
+          <!-- Form -->
+          <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+            <div class="form-group mb-0">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+                <input class="form-control" placeholder="Search" type="text">
+              </div>
+            </div>
+          </form>
+          <!-- User -->
+          <ul class="navbar-nav align-items-center d-none d-md-flex">
+            <li class="nav-item dropdown">
+              <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media align-items-center">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <img alt="Image placeholder" src="./assets/img/icons/nnpc-icon.png">
+                  </span>
+                  <div class="media-body ml-2 d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">NNPC Management</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                <div class=" dropdown-header noti-title">
+                  <h6 class="text-overflow m-0">Welcome!</h6>
+                </div>
+                <a href="#" class="dropdown-item">
+                  <i class="ni ni-single-02"></i>
+                  <span>My profile</span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <i class="ni ni-settings-gear-65"></i>
+                  <span>Settings</span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <i class="ni ni-calendar-grid-58"></i>
+                  <span>Activity</span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <i class="ni ni-support-16"></i>
+                  <span>Support</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-user-run"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Header -->
+      <div class="header pb-8 pt-5 pt-md-8">
+        <div class="container-fluid">
+          <div class="header-body">
+            <!-- Card stats -->
+            <div class="row">
+                <div class="col-xl-12 mb-2 mb-xl-0">
+                  <div class="card shadow">
+                    <div class="card-header border-0">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <h3 class="mb-0">
+                                <a class="btn btn-secondary" data-toggle="collapse" href="#collapseApplicants" role="button" aria-expanded="false" aria-controls="collapseApplicants">
+                                Filter Certificate</a>
+                        </h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body collapse" id="collapseApplicants">
+                      <!-- Form -->
+                      <form>
+                        <div class="row">
+                          <div class="col">
+                            <label for="minimum-age">Minimum Age</label>
+                            <input type="text" class="form-control" placeholder="20" value="20">
+                          </div>
+                          <div class="col">
+                            <label for="maximum-age">Maximum Age</label>
+                            <input type="text" class="form-control" placeholder="45" value="45">
+                          </div>
+                          <div class="col">
+                                <label for="search-by">Search by:</label>
+                                <select class="form-control" id="search-by" name="Search" title="Search">
+                                    <option>First name</option>
+                                    <option>Surnmae</option>
+                                    <option>Application ID</option>
+                                    <option>Email Address</option>
+                                </select>
+                         </div>
+                         <div class="col">
+                                <label for="keywords">Keywords</label>
+                                <input type="text" class="form-control" placeholder="Type Keywords...">
+                         </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <label for="position">Position</label>
+                                    <select class="form-control" id="position" name="position" title="Position" onchange="javascript:if(this.value == '003')
+                                    {
+                                        $('#cos').css('visibility','hidden');
+                                        $('#course').css('visibility','hidden');
+                                    }else{
+                                        $('#cos').css('visibility','visible');
+                                        $('#course').css('visibility','visible');
+                                    }">
+                                    <option value="#" selected=""> ALL </option>
+                                            <option value="EH/ACC.01">
+                                        Accountant    	</option>
+                                            <option value="EH/AUD.01.02">
+                                        Auditor    	</option>
+                                            <option value="EH/BUA.01">
+                                        Business Analyst    	</option>
+                                            <option value="EH/CCO.01">
+                                        Cost Control Officer    	</option>
+                                            <option value="EH/CHE.01.02">
+                                        Chemical Engineer    	</option>
+                                  </select>
+                            </div>
+                            <div class="col">
+                                <label for="gender">Gender</label>
+                                <select class="form-control" id="gender" name="gender" title="gender">
+                                        <option value="#" selected=""> ALL GENDER </option>
+                                      <option value="male"> Male </option>
+                                      <option value="female"> Female </option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="geo-political">Geo-Political Zone</label>
+                                <select class="form-control" name="gpzone" id="gpzone" onchange="javascript:if(this.value!=&quot;#&quot; &amp;&amp; this.value!=&quot;&quot;){ getGeoZone(this.value) }else{ }">
+                                <option value="#">::: Select  Geo-Political Zone :::</option><option value="NORTH CENTRAL">NORTH CENTRAL </option><option value="NORTH EAST">NORTH EAST </option><option value="NORTH WEST">NORTH WEST </option><option value="SOUTH EAST">SOUTH EAST </option><option value="SOUTH SOUTH">SOUTH SOUTH </option><option value="SOUTH WEST">SOUTH WEST </option></select>
+                            </div>
+                            <div class="col">
+                                <label for="state">State</label>
+                                <select class="form-control" name="state_of_origin" id="state_of_origin" onchange="javascript:if(this.value!=&quot;#&quot; &amp;&amp; this.value!=&quot;&quot;){
+                                    $.ajax({
+                                         type: &quot;post&quot;,
+                                         url: &quot;utilities.php&quot;,
+                                         data: &quot;op=get_lga&amp;state_code=&quot;+this.value,
+                                         success: function(msg){
+                                             $(&quot;#lga&quot;).empty();
+                                             $(&quot;#lga&quot;).append(msg);
+                                             $.LoadingOverlay(&quot;hide&quot;,true);
+                                         }
+                                       });
+                                  }else
+                                  {
+                                  }" title="State">
+                              <option></option>
+                              <option>ABIA</option><option>ADAMAWA</option><option>AKWA IBOM</option><option>ANAMBRA</option><option>BAUCHI</option><option>BAYELSA</option><option>BENUE</option><option>BORNO</option><option>CROSS RIVER</option><option>DELTA</option><option>EBONYI</option><option>EDO</option><option>EKITI</option><option>ENUGU</option><option>FCT</option><option>GOMBE</option><option>IMO</option><option>JIGAWA</option><option>KADUNA</option><option>KANO</option><option>KATSINA</option><option>KEBBI</option><option>KOGI</option><option>KWARA</option><option>LAGOS</option><option>NASARAWA</option><option>NIGER</option><option>OGUN</option><option>ONDO</option><option>OSUN</option><option>OYO</option><option>PLATEAU</option><option>RIVERS</option><option>SOKOTO</option><option>TARABA</option><option>YOBE</option><option>ZAMFARA</option></select>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <label for="LGA">LGS</label>
+                                <select class="form-control">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                    <label for="marital-status">Marital Status</label>
+                                    <select class="form-control" name="marital">
+                                            <option value="#" selected="" hidden="">:: Pick Marital Status ::</option>
+                                            <option value="Single">Single</option>
+                                            <option value="Married">Married</option>
+                                    </select>
+                            </div>
+                            <div class="col">
+                                    <label for="application-status">Application Status</label>
+                                    <select name="appl_status" class="form-control">
+                                        <option value="">All Status</option>
+                                        <option value="z9">Shortlisted (Approved)</option>
+                                        <option value="z10">Shortlisted (Not Approved)</option>
+                                        <option value="0">Pending Review</option>
+                                        <option value="3">Not Shortlisted</option>
+                                    </select>
+                            </div>
+                            <div class="col mt-4">
+                                <button type="submit" class="btn btn-lg btn-success btn-block">Filter</button>
+                            </div>
+                        </div>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page content -->
+      <div class="container-fluid mt--7">
+        <div class="row">
+          <div class="col-xl-12 mb-5 mb-xl-0">
+            <div class="card shadow">
+              <div class="card-header border-0">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h3 class="mb-0">Job Certificate Requirements</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb--1" style="padding: 0 20px">
+                  <div class="col-md-3">
+                    <a href="#addModal" data-toggle="modal" class="btn btn-warning btn-sm"><i class="fa fa-plus"></i> Add New</a>
+                    <a href="#" class="btn btn-success btn-sm"><i class="fa fa-print"></i> Print</a>
+                  </div>
+                  <div class="col-md-2">
+                    No of Records: <span class="badge badge-light">17</span>
+                  </div>
+                  <div class="col-md-3">
+                        <div class="form-group row">
+                            <label for="limit" class="col-sm-5 pt-1">Limit</label>
+                            <div class="col-sm-7">
+                            <select name="limit" id="limit" onchange="javascript:doSearch('manage_users.php');" class="form-control-sm form-control">
+                                    <option value="1">1</option>
+                                    <option value="10" selected="">10</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                    <option value="500">500</option>
+                                    <option value="700">700</option>
+                                    <option value="1000">1000</option>
+                            </select>
+                        </div>                   
+                  </div>
+                  </div>
+                  <div class="col-md-3">
+                        <nav aria-label="...">
+                                <ul class="pagination justify-content-end mb-0">
+                                  <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">
+                                      <i class="fas fa-angle-left"></i>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item active">
+                                    <a class="page-link" href="#">1</a>
+                                  </li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">
+                                      <i class="fas fa-angle-right"></i>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="table-responsive">
+                    <table class="table table-flush">
+                            <thead class="thead-light">
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>Code</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Category</th>
+                                        <th>Requirement </th>
+                                        <th>Action</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>EH/ACC.01</td>
+                                    <td>Accountant</td>
+                                    <td>Experienced Hires have excellent opportunities to join our existing teams of motivated professionals and contribute their expertise towards creating business value for NNPC...</td>
+                                    <td>Experienced Professionals</td>
+                                    <td>Institute of Chartered Accountants of Nigeria</td>
+                                    <td>2018-09-13 17:04:54</td>
+                                    <td><a href="#editModal" class="btn btn-warning" data-toggle="modal"><i class="fa fa-edit"></i> Edit</a></td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>EH/AUD.01.02</td>
+                                  <td>Auditor</td>
+                                  <td>Experienced Hires have excellent opportunities to join our existing teams of motivated professionals and contribute their expertise towards creating business value for NNPC...</td>
+                                  <td>Experienced Professionals</td>
+                                  <td>Institute of Chartered Accountants of Nigeria</td>
+                                  <td>2018-09-13 17:04:54</td>
+                                  <td><a href="#editModal" class="btn btn-warning" data-toggle="modal"><i class="fa fa-edit"></i> Edit</a></td>
+                              </tr>
+                            </tbody>
+                        </table>
+              </div>
+              <div class="card-footer py-4">
+                    <nav aria-label="...">
+                      <ul class="pagination justify-content-end mb-0">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1">
+                            <i class="fas fa-angle-left"></i>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <i class="fas fa-angle-right"></i>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+            </div>
+          </div>
+  
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="row align-items-center justify-content-xl-between">
+            <div class="col-xl-6">
+              <div class="copyright text-center text-xl-left text-muted">
+                &copy; 2019 Nigerian National Petroleum Corporation 
+              </div>
+            </div>
+            <div class="col-xl-6">
+  
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    
+      </main>
+      <!-- page-content" -->
+    </div>
+
+  <!--  Scripts -->
+  <!-- Core -->
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Optional JS -->
+  <script src="./assets/js/sidebar.js"></script>
+  <!-- JS -->
+  <script src="./assets/js/main.js?v=1.0.0"></script>
+  <script>
+      $('.collapse').collapse({  
+          toggle: false
+          })
+  </script>
+      <!-- Add Modal -->
+      <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Add New Requirement</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                      <label for="">Position:</label>
+                      <select name="position" id="position" class="form-control">
+                          <option value="EH/ACC.01">Accountant</option><option value="EH/AUD.01.02">Auditor</option><option value="EH/BUA.01">Business Analyst</option><option value="EH/CCO.01">Cost Control Officer</option><option value="EH/CHE.01.02">Chemical Engineer</option><option value="EH/COE.01">Computer Engineer</option><option value="EH/COE.02">Cost Engineer</option><option value="EH/CRO.03">Community Relations Officer</option><option value="EH/CRU.01">CRU Process Operator</option><option value="EH/DFA.01">Drilling Fluid Analyst</option><option value="EH/DRE.02">Drilling Engineer</option><option value="EH/ECO.01">Economist</option><option value="EH/ELE.02">Electrical Engineer</option><option value="EH/ELT.02 ">Electronics Engineer</option><option value="EH/ESE.01">Equipment Support Engineer</option><option value="EH/FCC.01">FCC Operator</option><option value="EH/FNO.01">Finance Officer</option><option value="EH/GCA.01">Gas Chromatography/Mass Spectrometric Analyst</option><option value="EH/GEC.01">Geochemist</option><option value="EH/GEO.01.02">Geologist</option><option value="EH/GEP.01.02 ">Geophysicist</option><option value="EH/HRA.01">Human Resources Advisor </option><option value="EH/INT.01">Instrument Technician</option><option value="EH/ISO.03">Industrial/Safety Officer</option><option value="EH/ITA.01">IT Security Analyst</option><option value="EH/ITE.03">Inspection &amp; Testing</option><option value="EH/LAS.02">Land Surveying</option><option value="EH/LAT.04">Lab Technologist</option><option value="EH/LEO.01">Legal Officer</option><option value="EH/MAE.03">Marine Engineer</option><option value="EH/MCP.01">Micropaleontologist / Stratigrapher</option><option value="EH/MEC.01">Medical Consultant</option><option value="EH/MEE.01">Mechanical Engineer</option><option value="EH/NAP.01">Nannoplanktologist/Strati-grapher</option><option value="EH/PCO.03">Pollution Control Officer</option><option value="EH/PEC.01">Petroleum Economist</option><option value="EH/PEP.02">Petrophysicist</option><option value="EH/PPA.01">Petroleum Product Analyst</option><option value="EH/PPE.01.02">Petroleum/Production Engineer</option><option value="EH/PRE.01">Project Engineer</option><option value="EH/PVT.01">PVT Analyst</option><option value="EH/QUS.02">Quantity Surveying</option><option value="EH/RCO.01">Risk/Compliance Officer</option><option value="EH/REE.03">Rotating Equipment Engineer</option><option value="EH/RES.01">Reservoir Engineer </option><option value="EH/SAP.01">Superintendent, Atmospheric Pollution</option><option value="EH/SEA.01">Security Advisor</option><option value="EH/SLC.01">Superintendent, Liquid Chromatography</option><option value="EH/SOE.02">Software Engineer</option><option value="EH/TAX.01">Tax Officer</option><option value="EH/TOX.01">Toxicologist</option><option value="EH/WES.02">Well Engineer</option><option value="EH/WET.03.04">Welding Technicians</option><option value="EH/WWA.01">Water/Waste Water Analyst</option><option value="GT01">Graduate Trainees </option>                   		</select>
+                  </div>
+                  <div class="form-group">
+                      <label for="description">Job Desciption:</label>
+                      <textarea class="form-control" id="description" rows="3" placeholder="Type a description for this position"></textarea>
+                    </div>
+                  <div class="form-group">
+                    <div class="form-group">
+                      <label for="">Required Certificate:</label>
+                      <select name="cert_required" id="cert_required" class="form-control">
+                        <option value="103">Association of National Accountants of Nigeria</option><option value="16">Association of Medical Laboratory Scientists of Nigeria</option><option value="10">Chartered Institute of Administration</option><option value="11">Chartered Insurance Institute of Nigeria</option><option value="12">Chartered Institute of Stockbrokers</option><option value="13">Chartered Institute of Bankers of Nigeria</option><option value="14">Chartered Institute of Personnel Management of Nigeria</option><option value="15">Chartered Institute of Purchasing &amp; Supply Mgt. of Nigeria</option><option value="1">Institute of Chartered Accountants of Nigeria</option><option value="17">Institute of Chartered Secretaries &amp; Administrators of Nigeria</option><option value="18">Institute of Public Analysts of Nigeria</option><option value="19">Chartered Institute of Taxation of Nigeria</option><option value="2">Nigerian Institute of Management (Chartered)</option><option value="20">Institute of Chartered Chemists of Nigeria</option><option value="21">Institute of Management Consultant of Nigeria</option><option value="22">Nigeiran Institute of Architects</option><option value="23">Nigeria Computer Society</option><option value="24">Nigerian Society of Engineers</option><option value="25">National Engineering Centre</option><option value="26">Nigerian Institution of Surveyors</option><option value="27">Nigerian Institute of Quantity Surveyors</option><option value="28">Nigerian Institute of Town Planners</option><option value="29">Nigerian Institution of Estate Surveyors &amp; Valuers</option><option value="3">Nigerian Mining And Geosciences Society</option><option value="30">Nigerian Medical Association</option><option value="31">Nigerian Institute of Building</option><option value="32">Nigerian Bar Association</option><option value="33">Nigerian Institute of Public Relations (NIPR)</option><option value="34">Pharmaceutical Society of Nigeria</option><option value="35">National Institute of Marketing of Nigeria</option><option value="36">Nigerian Veterinary Medical Association</option><option value="37">Association of General &amp; Private Medical Practitioners of Nigeria</option><option value="38">Business Education Exams Council</option><option value="39">Centre for Law &amp; Development</option><option value="4">Certified Pension Institute of Nigeria</option><option value="40">Chartered Institute of Marketing of Nigeria</option><option value="41">Certified Institute of Cost Management</option><option value="42">Medical &amp; Dental Consultants Association of Nigeria</option><option value="43">Nigerian Institute of Management</option><option value="44">Nigerian Institute of Social and Economic Research</option><option value="45">Nigerian Society of Engineers</option><option value="46">Science Teachers Association of Nigeria</option><option value="47">Strategic Management Centre</option><option value="48">West African College of Physicians</option><option value="49">Institute of Directors Professional Bodies in Nigeria</option><option value="5">Advertising Practioners Council of Nigeria</option><option value="50">Outdoor Advertising Association of Nigeria</option><option value="6">Manufacturers Association of Nigeria</option><option value="7">The Nigerian Institute of Safety Professionals</option><option value="8">Pharmacist Council of Nigeria</option><option value="9">West African Institute for Financial &amp; Economic Management</option><option value="51">Financial Institutions Training Centre (FITC)</option><option value="52">Money Market Association of Nigeria</option><option value="53">African Institute for Applied Economics</option><option value="54">Institute of Credit &amp; Risk Managment</option><option value="55">Portfolio &amp; Debt Management Institute</option><option value="56">Institute of Chartered Economists of Nigeria</option><option value="5">Institute of Registered Administrative Managers of Nigeria</option><option value="58">The Institute of Certified Geographers of Nigeria</option><option value="59">The Institute of Business Development</option><option value="60">The Institute of Benefits and Trusts Management</option><option value="61">The Institute of Pensions Management</option><option value="62">Chartered Institute of Administration</option><option value="63">Nigerian Institute of Professional Secretaries</option><option value="64">Pipeline Professionals� Association of Nigeria (PLAN)</option><option value="65">National Teachers� Institute</option><option value="66">Nigeria Institute of Public Relations</option><option value="67">Council for the Regulation of Engineering in Nigeria (COREN)</option><option value="68">Nigerian Institute of Architects</option><option value="69">Nigeria Insurers Association</option><option value="70">Nigerian Institute of Building</option><option value="71">Information Technology Association of Nigeria</option><option value="72">Certified Institute of Warehousing &amp; Materials Management</option><option value="73">Institute of Certified Public Accountants of Nigeria</option><option value="74">Certified Pension Institute of Nigeria</option><option value="75">Money Market Association of Nigeria</option><option value="76">Institute of Forensic Accountants of Nigeria</option><option value="77">Chartered Institute of Cost &amp; Management Accountants of Nigeria</option><option value="78">The Institute of Credit Administration of Nigeria</option><option value="79">The Institute of Company &amp; Commercial Accountants of Nigeria</option><option value="80">The Institute of Registered Administrative Managers of Nigeria</option><option value="81">The Chartered Institute of Purchasing &amp; Supply</option><option value="82">Institute of Industrial Security &amp; Safety of Nigeria</option><option value="83">Institute of Investment Management &amp; Research</option><option value="84">Nigerian Institute of Safety Professionals (NISP)</option><option value="85">Institute of Public Management</option><option value="86">Institute of Fraud Examiners</option><option value="87">Nigerian Institute of Industrial Management</option><option value="88">Medical &amp; Dental Council of Nigeria</option><option value="89">Association of West African Professional Economists Bodies</option><option value="90">Institute of Strategic Management of Nigeria</option><option value="91">Institute of Professional Recruitment Consultants, IPRC Nigeria</option><option value="92">Institute of Finance &amp; Control of Nigeria</option><option value="93">The Chartered Institute of Logistics &amp; Transport</option><option value="94">Institute of Treasury Management</option><option value="95">Chartered Institute of Commerce of Nigeria</option><option value="96">Nigeria Institute of Civil Engineers</option><option value="97">Institute of Data Processing Management of Nigeria</option><option value="98">Society of Construction Industry Arbitrators of Nigeria</option><option value="99">Chartered Institute of Management Accountants (CIMA) Nigeria</option><option value="100">Institute of Strategic Customer Service and Trade Management of Nigeria</option>                   		</select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success">Add New requirements</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Edit Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">Edit this Requirement</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+              <label for="">Code:</label>
+              <input class="form-control" type="text" placeholder="EH/ACC.01" value="EH/ACC.01" disabled>
+          </div>
+          <div class="form-group">
+              <label for="">Position:</label>
+              <input class="form-control" type="text" placeholder="Accountant" value="Accountant" disabled>
+          </div>
+          <div class="form-group">
+              <label for="description">Job Desciption:</label>
+              <textarea class="form-control" id="description" rows="3">Experienced Hires have excellent opportunities to join our existing teams of motivated professionals and contribute their expertise towards creating business value for NNPC...</textarea>
+            </div>
+          <div class="form-group">
+            <div class="form-group">
+              <label for="">Required Certificate:</label>
+              <select name="cert_required" id="cert_required" class="form-control">
+                <option value="103">Association of National Accountants of Nigeria</option><option value="16">Association of Medical Laboratory Scientists of Nigeria</option><option value="10">Chartered Institute of Administration</option><option value="11">Chartered Insurance Institute of Nigeria</option><option value="12">Chartered Institute of Stockbrokers</option><option value="13">Chartered Institute of Bankers of Nigeria</option><option value="14">Chartered Institute of Personnel Management of Nigeria</option><option value="15">Chartered Institute of Purchasing &amp; Supply Mgt. of Nigeria</option><option value="1">Institute of Chartered Accountants of Nigeria</option><option value="17">Institute of Chartered Secretaries &amp; Administrators of Nigeria</option><option value="18">Institute of Public Analysts of Nigeria</option><option value="19">Chartered Institute of Taxation of Nigeria</option><option value="2">Nigerian Institute of Management (Chartered)</option><option value="20">Institute of Chartered Chemists of Nigeria</option><option value="21">Institute of Management Consultant of Nigeria</option><option value="22">Nigeiran Institute of Architects</option><option value="23">Nigeria Computer Society</option><option value="24">Nigerian Society of Engineers</option><option value="25">National Engineering Centre</option><option value="26">Nigerian Institution of Surveyors</option><option value="27">Nigerian Institute of Quantity Surveyors</option><option value="28">Nigerian Institute of Town Planners</option><option value="29">Nigerian Institution of Estate Surveyors &amp; Valuers</option><option value="3">Nigerian Mining And Geosciences Society</option><option value="30">Nigerian Medical Association</option><option value="31">Nigerian Institute of Building</option><option value="32">Nigerian Bar Association</option><option value="33">Nigerian Institute of Public Relations (NIPR)</option><option value="34">Pharmaceutical Society of Nigeria</option><option value="35">National Institute of Marketing of Nigeria</option><option value="36">Nigerian Veterinary Medical Association</option><option value="37">Association of General &amp; Private Medical Practitioners of Nigeria</option><option value="38">Business Education Exams Council</option><option value="39">Centre for Law &amp; Development</option><option value="4">Certified Pension Institute of Nigeria</option><option value="40">Chartered Institute of Marketing of Nigeria</option><option value="41">Certified Institute of Cost Management</option><option value="42">Medical &amp; Dental Consultants Association of Nigeria</option><option value="43">Nigerian Institute of Management</option><option value="44">Nigerian Institute of Social and Economic Research</option><option value="45">Nigerian Society of Engineers</option><option value="46">Science Teachers Association of Nigeria</option><option value="47">Strategic Management Centre</option><option value="48">West African College of Physicians</option><option value="49">Institute of Directors Professional Bodies in Nigeria</option><option value="5">Advertising Practioners Council of Nigeria</option><option value="50">Outdoor Advertising Association of Nigeria</option><option value="6">Manufacturers Association of Nigeria</option><option value="7">The Nigerian Institute of Safety Professionals</option><option value="8">Pharmacist Council of Nigeria</option><option value="9">West African Institute for Financial &amp; Economic Management</option><option value="51">Financial Institutions Training Centre (FITC)</option><option value="52">Money Market Association of Nigeria</option><option value="53">African Institute for Applied Economics</option><option value="54">Institute of Credit &amp; Risk Managment</option><option value="55">Portfolio &amp; Debt Management Institute</option><option value="56">Institute of Chartered Economists of Nigeria</option><option value="5">Institute of Registered Administrative Managers of Nigeria</option><option value="58">The Institute of Certified Geographers of Nigeria</option><option value="59">The Institute of Business Development</option><option value="60">The Institute of Benefits and Trusts Management</option><option value="61">The Institute of Pensions Management</option><option value="62">Chartered Institute of Administration</option><option value="63">Nigerian Institute of Professional Secretaries</option><option value="64">Pipeline Professionals� Association of Nigeria (PLAN)</option><option value="65">National Teachers� Institute</option><option value="66">Nigeria Institute of Public Relations</option><option value="67">Council for the Regulation of Engineering in Nigeria (COREN)</option><option value="68">Nigerian Institute of Architects</option><option value="69">Nigeria Insurers Association</option><option value="70">Nigerian Institute of Building</option><option value="71">Information Technology Association of Nigeria</option><option value="72">Certified Institute of Warehousing &amp; Materials Management</option><option value="73">Institute of Certified Public Accountants of Nigeria</option><option value="74">Certified Pension Institute of Nigeria</option><option value="75">Money Market Association of Nigeria</option><option value="76">Institute of Forensic Accountants of Nigeria</option><option value="77">Chartered Institute of Cost &amp; Management Accountants of Nigeria</option><option value="78">The Institute of Credit Administration of Nigeria</option><option value="79">The Institute of Company &amp; Commercial Accountants of Nigeria</option><option value="80">The Institute of Registered Administrative Managers of Nigeria</option><option value="81">The Chartered Institute of Purchasing &amp; Supply</option><option value="82">Institute of Industrial Security &amp; Safety of Nigeria</option><option value="83">Institute of Investment Management &amp; Research</option><option value="84">Nigerian Institute of Safety Professionals (NISP)</option><option value="85">Institute of Public Management</option><option value="86">Institute of Fraud Examiners</option><option value="87">Nigerian Institute of Industrial Management</option><option value="88">Medical &amp; Dental Council of Nigeria</option><option value="89">Association of West African Professional Economists Bodies</option><option value="90">Institute of Strategic Management of Nigeria</option><option value="91">Institute of Professional Recruitment Consultants, IPRC Nigeria</option><option value="92">Institute of Finance &amp; Control of Nigeria</option><option value="93">The Chartered Institute of Logistics &amp; Transport</option><option value="94">Institute of Treasury Management</option><option value="95">Chartered Institute of Commerce of Nigeria</option><option value="96">Nigeria Institute of Civil Engineers</option><option value="97">Institute of Data Processing Management of Nigeria</option><option value="98">Society of Construction Industry Arbitrators of Nigeria</option><option value="99">Chartered Institute of Management Accountants (CIMA) Nigeria</option><option value="100">Institute of Strategic Customer Service and Trade Management of Nigeria</option>                   		</select>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

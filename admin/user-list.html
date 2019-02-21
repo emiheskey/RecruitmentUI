@@ -126,7 +126,7 @@
       <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
         <div class="container-fluid">
           <!-- Brand -->
-          <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" style="margin-left: 20px;" href="#">Applicants' List</a>
+          <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" style="margin-left: 20px;" href="#">User List</a>
           <!-- Form -->
           <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
             <div class="form-group mb-0">
@@ -194,7 +194,7 @@
                         <div class="col">
                           <h3 class="mb-0">
                                 <a class="btn btn-secondary" data-toggle="collapse" href="#collapseApplicants" role="button" aria-expanded="false" aria-controls="collapseApplicants">
-                                Filter Applicants</a>
+                                Filter Users</a>
                         </h3>
                         </div>
                       </div>
@@ -329,15 +329,19 @@
               <div class="card-header border-0">
                 <div class="row align-items-center">
                   <div class="col">
-                    <h3 class="mb-0">All Applicants (Completed Registration)</h3>
+                    <h3 class="mb-0">Admin Users</h3>
                   </div>
                 </div>
               </div>
               <div class="row mb--1" style="padding: 0 20px">
+                  <div class="col-md-3">
+                    <a href="#addModal" data-toggle="modal" class="btn btn-warning btn-sm"><i class="fa fa-plus"></i> Add New User</a>
+                    <a href="#" class="btn btn-success btn-sm"><i class="fa fa-print"></i> Print</a>
+                  </div>
                   <div class="col-md-2">
                     No of Records: <span class="badge badge-light">17</span>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-md-3">
                         <div class="form-group row">
                             <label for="limit" class="col-sm-5 pt-1">Limit</label>
                             <div class="col-sm-7">
@@ -354,11 +358,6 @@
                             </select>
                         </div>                   
                   </div>
-                  </div>
-                  <div class="col-md-5">
-                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-sync-alt"></i> Reload Report</a>
-                    <a href="#" class="btn btn-success btn-sm"><i class="fa fa-print"></i> Print</a>
-                    <a href="#" class="btn btn-warning btn-sm"><i class="fa fa-file-excel"></i> Export To Excel</a>
                   </div>
                   <div class="col-md-3">
                         <nav aria-label="...">
@@ -388,301 +387,38 @@
               </div>
               <div class="clearfix"></div>
               <div class="table-responsive">
-                    <table class="table align-items-center table-flush" style="overflow:scroll">
+                    <table class="table table-flush">
                             <thead class="thead-light">
-                              <tr>
-                                  <th valign="middle"><input type="checkbox" name="chkall" id="chkall" value="" onclick="javascript: if (this.checked) {doClickAll(this.form); show_btn_all(); } else {doUnClickAll(this.form)}" ;=""></th>
-                                <th>S/N</th>
-                                 <th>Application ID</th>
-                                <th>First Name</th>
-                                  <th>Last Name</th>
-                                  <th>Age</th>
-                                  <th>Position</th>
-                                  <th>Gender</th>
-                                  <th>State of Origin</th>
-                                  <th>LGA</th>
-                                  <th>Status</th>                     
-                                  <th>Email</th>
-                                  <th>Phone</th>
-                                  <th>Marital Status</th>
-                                  <th>Completed Nysc?</th>
-                                  <th>Action</th>
-                                  <th>Action</th>
-                                </tr>
-                            </thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>Username</th>
+                                        <th>Role name</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Created On </th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
                             <tbody>
-                                <tr class="trodd" style="cursor:pointer" title="">
-                                    <td valign="middle">
-                                        <input type="checkbox" name="chkopt[]" id="chkopt" value="" onclick="javascript: if (this.checked) {gy('doss'); shows_btn('EH-NNPC19020310000004'); }"></td>
+                                <tr>
                                     <td>1</td>
-                                    <td>EH-NNPC19020310000004</td>
-                                    <td>John</td>
-                                    <td>Dometric</td>
-                                    <td>19</td>
-                                    <td>Auditor</td>
-                                    <td>female</td>
-                                    <td>ADAMAWA</td>
-                                    <td>Demsa</td>                      
-                                    <td><a href="javascript:void(0)">PENDING REVIEW</a></td>
-                                    <td>pleasurehub2018@gmail.com</td>
-                                    <td>07066301932</td>
-                                    <td>Married</td>
-                                    <td>No</td>
-                                    <td>
-                                    <a href="#passportModal" data-toggle="modal" class="btn btn-danger">View Passport</a>
-                                    </td>
-                                    <td>
-                                        <a href="javascript:void(0)" class="btn btn-warning">
-                                            View Doc
-                                        </a>
-                                    </td>
-                              </tr>
-                               <tr class="treven" style="cursor:pointer" title="">
-                                    <td valign="middle">
-                                        <input type="checkbox" name="chkopt[]" id="chkopt" value="" onclick="javascript: if (this.checked) {gy('doss'); shows_btn('EH-NNPC19052000000003'); }"></td>
+                                    <td>femi</td>
+                                    <td>Supervisor </td>
+                                    <td>Femi</td>
+                                    <td>Akala</td>
+                                    <td>2018-09-13 17:04:54</td>
+                                    <td><a href="#editModal" class="btn btn-warning" data-toggle="modal"><i class="fa fa-edit"></i> Edit</a></td>
+                                </tr>
+                                <tr>
                                     <td>2</td>
-                                    <td>EH-NNPC19052000000003</td>
-                                    <td>Aminu</td>
-                                    <td>Mahdi</td>
-                                    <td>18</td>
-                                    <td>Cost Engineer</td>
-                                    <td>male</td>
-                                    <td>BAUCHI</td>
-                                    <td>Katagum</td>
-                      
-                                    <td><a href="javascript:void(0)">PENDING REVIEW</a></td>
-                                    <td>mails4amin@yahoo.com</td>
-                                    <td>08030626837</td>
-                                    <td>Married</td>
-                                    <td>yes</td>
-                                    <td>
-                                    <a href="#passportModal" data-toggle="modal" class="btn btn-danger">View Passport</a>
-                                    </td>
-                      
-                      
-                                    <td>
-                                        <a href="javascript:void(0)" id="match" onclick="view_doc('EH-NNPC19052000000003')" class="btn btn-warning">
-                                            View Doc
-                                        </a>
-                                    </td>
-                      
-                      
-                      
-                      
-                              </tr>
-                      
-                            
-                                  <tr class="trodd" style="cursor:pointer" title="">
-                                    <td valign="middle">
-                                        <input type="checkbox" name="chkopt[]" id="chkopt" value="" onclick="javascript: if (this.checked) {gy('doss'); shows_btn('EH-NNPC19142800000001'); }"></td>
-                                    <td>3</td>
-                                    <td>EH-NNPC19142800000001</td>
-                                    <td>Uzodimma</td>
-                                    <td>Esi</td>
-                                    <td>39</td>
-                                    <td>Mechanical Engineer</td>
-                                    <td>male</td>
-                                    <td>ENUGU</td>
-                                    <td>Oji-river</td>
-                      
-                                    <td><a href="javascript:void(0)">PENDING REVIEW</a></td>
-                                    <td>uzoesi@gmail.com</td>
-                                    <td>9038852942</td>
-                                    <td>Married</td>
-                                    <td>yes</td>
-                                    <td>
-                                     <a href="#passportModal" data-toggle="modal" class="btn btn-danger">View Passport</a>
-                                    </td>
-                      
-                      
-                                    <td>
-                                        <a href="javascript:void(0)" id="match" onclick="view_doc('EH-NNPC19142800000001')" class="btn btn-warning">
-                                            View Doc
-                                        </a>
-                                    </td>
-                              </tr>
-                      
-                            
-                                  <tr class="treven" style="cursor:pointer" title="">
-                                    <td valign="middle">
-                                        <input type="checkbox" name="chkopt[]" id="chkopt" value="" onclick="javascript: if (this.checked) {gy('doss'); shows_btn('GT-NNPC19020320000002'); }"></td>
-                                    <td>4</td>
-                                    <td>GT-NNPC19020320000002</td>
-                                    <td>nkechi</td>
-                                    <td>odunze</td>
-                                    <td>18</td>
-                                    <td>Graduate Trainees </td>
-                                    <td>male</td>
-                                    <td>ADAMAWA</td>
-                                    <td>Fufore</td>
-                      
-                                    <td><a href="javascript:void(0)">PENDING REVIEW</a></td>
-                                    <td>nmodunze@hotmail.com</td>
-                                    <td>8888888888</td>
-                                    <td>Married</td>
-                                    <td>yes</td>
-                                    <td>
-                                    <a href="#passportModal" data-toggle="modal" class="btn btn-danger">View Passport</a>
-                                    </td>
-                                    <td>
-                                        <a href="javascript:void(0)" id="match" onclick="view_doc('GT-NNPC19020320000002')" class="btn btn-warning">
-                                            View Doc
-                                        </a>
-                                    </td>
-                              </tr>
-                                  <tr class="trodd" style="cursor:pointer" title="">
-                                    <td valign="middle">
-                                        <input type="checkbox" name="chkopt[]" id="chkopt" value="" onclick="javascript: if (this.checked) {gy('doss'); shows_btn('GT-NNPC19040850000001'); }"></td>
-                                    <td>5</td>
-                                    <td>GT-NNPC19040850000001</td>
-                                    <td>Onyinye</td>
-                                    <td>Nwokedi</td>
-                                    <td>34</td>
-                                    <td>Graduate Trainees </td>
-                                    <td>female</td>
-                                    <td>ANAMBRA</td>
-                                    <td>Idemili north</td>
-                      
-                                    <td><a href="javascript:void(0)">PENDING REVIEW</a></td>
-                                    <td>onyie85@gmail.com</td>
-                                    <td>8033113880</td>
-                                    <td>Single</td>
-                                    <td>yes</td>
-                                    <td>
-                                    <a href="#passportModal" data-toggle="modal" class="btn btn-danger">View Passport</a>
-                                    </td>
-                                    <td>
-                                        <a href="javascript:void(0)" id="match" onclick="view_doc('GT-NNPC19040850000001')" class="btn btn-warning">
-                                            View Doc
-                                        </a>
-                                    </td>
-                              </tr>
-                      
-                            
-                                  <tr class="treven" style="cursor:pointer" title="">
-                                    <td valign="middle">
-                                        <input type="checkbox" name="chkopt[]" id="chkopt" value="" onclick="javascript: if (this.checked) {gy('doss'); shows_btn('GT-NNPC19052000000001'); }"></td>
-                                    <td>6</td>
-                                    <td>GT-NNPC19052000000001</td>
-                                    <td>Aminu</td>
-                                    <td>Mahdi</td>
-                                    <td>26</td>
-                                    <td>Graduate Trainees </td>
-                                    <td>male</td>
-                                    <td>BAUCHI</td>
-                                    <td>Katagum</td>                      
-                                    <td><a href="javascript:void(0)">PENDING REVIEW</a></td>
-                                    <td>aminu.mahdi@gmail.com</td>
-                                    <td>08030626837</td>
-                                    <td>Married</td>
-                                    <td>yes</td>
-                                    <td>
-                                    <a href="#passportModal" data-toggle="modal" class="btn btn-danger">View Passport</a>
-                                    </td>
-                      
-                      
-                                    <td>
-                                        <a href="javascript:void(0)" id="match" onclick="view_doc('GT-NNPC19052000000001')" class="btn btn-warning">
-                                            View Doc
-                                        </a>
-                                    </td>
-                              </tr>                      
-                            
-                                  <tr class="trodd" style="cursor:pointer" title="">
-                                    <td valign="middle">
-                                        <input type="checkbox" name="chkopt[]" id="chkopt" value="" onclick="javascript: if (this.checked) {gy('doss'); shows_btn('GT-NNPC19052000000005'); }"></td>
-                                    <td>7</td>
-                                    <td>GT-NNPC19052000000005</td>
-                                    <td>Aminu</td>
-                                    <td>Mahdi</td>
-                                    <td>36</td>
-                                    <td>Graduate Trainees </td>
-                                    <td>male</td>
-                                    <td>BAUCHI</td>
-                                    <td>Katagum</td>
-                      
-                                    <td><a href="javascript:void(0)">PENDING REVIEW</a></td>
-                                    <td>aminumahdi@hotmail.com</td>
-                                    <td>08030626837</td>
-                                    <td>Married</td>
-                                    <td>yes</td>
-                                    <td>
-                                     <a href="#passportModal" data-toggle="modal" class="btn btn-danger">View Passport</a>
-                                    </td>
-                      
-                      
-                                    <td>
-                                        <a href="javascript:void(0)" id="match" onclick="view_doc('GT-NNPC19052000000005')" class="btn btn-warning">
-                                            View Doc
-                                        </a>
-                                    </td>
-                              </tr>
-                                  <tr class="treven" style="cursor:pointer" title="">
-                                    <td valign="middle">
-                                        <input type="checkbox" name="chkopt[]" id="chkopt" value="" onclick="javascript: if (this.checked) {gy('doss'); shows_btn('GT-NNPC19072340000001'); }"></td>
-                                    <td>8</td>
-                                    <td>GT-NNPC19072340000001</td>
-                                    <td>innocent</td>
-                                    <td>idoko</td>
-                                    <td>19</td>
-                                    <td>Graduate Trainees </td>
-                                    <td>male</td>
-                                    <td>BENUE</td>
-                                    <td>Okpokwu</td>
-                      
-                                    <td><a href="javascript:void(0)">PENDING REVIEW</a></td>
-                                    <td>innocent.akor@accessng.com</td>
-                                    <td>808 553 5271</td>
-                                    <td>Single</td>
-                                    <td>yes</td>
-                                    <td>
-                                    <a href="#passportModal" data-toggle="modal" class="btn btn-danger">View Passport</a>
-                                    </td>
-                      
-                      
-                                    <td>
-                                        <a href="javascript:void(0)" id="match" onclick="view_doc('GT-NNPC19072340000001')" class="btn btn-warning">
-                                            View Doc
-                                        </a>
-                                    </td>
-                      
-                      
-                      
-                      
-                              </tr>
-                      
-                            
-                                  <tr class="trodd" style="cursor:pointer" title="">
-                                    <td valign="middle">
-                                        <input type="checkbox" name="chkopt[]" id="chkopt" value="" onclick="javascript: if (this.checked) {gy('doss'); shows_btn('GT-NNPC19090960000001'); }"></td>
-                                    <td>9</td>
-                                    <td>GT-NNPC19090960000001</td>
-                                    <td>Moshie</td>
-                                    <td>Samuel</td>
-                                    <td>18</td>
-                                    <td>Graduate Trainees </td>
-                                    <td>male</td>
-                                    <td>CROSS RIVER</td>
-                                    <td>Yala</td>
-                      
-                                    <td><a href="javascript:void(0)">PENDING REVIEW</a></td>
-                                    <td>moshie.samuel@accessng.com</td>
-                                    <td>803 515 3080</td>
-                                    <td>Single</td>
-                                    <td>yes</td>
-                                    <td>
-                                    <a href="#passportModal" data-toggle="modal" class="btn btn-danger">View Passport</a>
-                                    </td>
-                      
-                      
-                                    <td>
-                                        <a href="javascript:void(0)" id="match" onclick="view_doc('GT-NNPC19090960000001')" class="btn btn-warning">
-                                            View Doc
-                                        </a>
-                                    </td>
-                              </tr>
-                            
-                          </tbody>
+                                    <td>maria</td>
+                                    <td>Reviewer</td>
+                                    <td>Amaria</td>
+                                    <td>John</td>
+                                    <td>2018-09-13 17:04:54</td>
+                                    <td><a href="#editModal" class="btn btn-warning" data-toggle="modal"><i class="fa fa-edit"></i> Edit</a></td>
+                                </tr>
+                            </tbody>
                         </table>
               </div>
               <div class="card-footer py-4">
@@ -734,35 +470,131 @@
       <!-- page-content" -->
     </div>
 
-  <!-- Argon Scripts -->
+  <!--  Scripts -->
   <!-- Core -->
   <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
   <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Optional JS -->
   <script src="./assets/js/sidebar.js"></script>
-  <!-- Argon JS -->
+  <!-- JS -->
   <script src="./assets/js/main.js?v=1.0.0"></script>
   <script>
       $('.collapse').collapse({  
           toggle: false
           })
   </script>
-  <!-- Passport Modal -->
-<div class="modal fade" id="passportModal" tabindex="-1" role="dialog" aria-labelledby="passportModaltitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Fname's Passport</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img src="assets/img/passport.jpg" class="img-fluid">
+      <!-- Add Modal -->
+      <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Add New User</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row">
+                        <div class="col">
+                        <label for="username">Username</label>
+                        <input class="form-control" placeholder="Username">
+                        </div>
+                    </div>
+                  <div class="form-group row">
+                    <div class="col">
+                        <label for="Password">Password</label>
+                         <input type="password" class="form-control" id="Password" placeholder="Password">
+                    </div>
+                    <div class="col">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                        <div class="col">
+                        <label for="fname">First name</label>
+                        <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                        <label for="lname">Last name</label>
+                        <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                            <div class="col">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col">
+                            <label for="lname">Phone</label>
+                            <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                        </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success">Add New User</button>
+              </div>
             </div>
           </div>
         </div>
+      <!-- Edit Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">Edit this Requirement</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+      <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                    <div class="col">
+                    <label for="username">Username</label>
+                    <input class="form-control" placeholder="Username" value="Femi">
+                    </div>
+                </div>
+              <div class="form-group row">
+                <div class="col">
+                    <label for="Password">Password</label>
+                     <input type="password" class="form-control" id="Password" placeholder="Password">
+                </div>
+                <div class="col">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                </div>
+              </div>
+              <div class="form-group row">
+                    <div class="col">
+                    <label for="fname">First name</label>
+                    <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                    <label for="lname">Last name</label>
+                    <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                        <div class="col">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col">
+                        <label for="lname">Phone</label>
+                        <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+                    </div>
+            </form>
+          </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
 </html>
