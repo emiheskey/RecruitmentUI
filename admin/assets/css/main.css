@@ -15463,6 +15463,7 @@ button.section-darker:focus
     fill: #f7fafc;
 }
 
+
 .stroke-secondary
 {
     stroke: #f7fafc;
@@ -21859,7 +21860,7 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     height: 3px;
 }
 
-/* Borrowed*/
+/* Sidebar */
 .sidebar-inner {
     height: 100%;
   }
@@ -21945,5 +21946,11 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
   }
   ul.navbar-nav > ul > li.nav-active > ul {
     display: block;
+  }
+
+  /* Login */
+  .login-bg {
+      background: url(../img/theme/header.png) no-repeat;
+      background-size: cover;
   }
   
