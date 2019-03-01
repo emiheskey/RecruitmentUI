@@ -1047,3 +1047,5 @@ var SalesChart = (function() {
 	}
 
 })();
+
+
