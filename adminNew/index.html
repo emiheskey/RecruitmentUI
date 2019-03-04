@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+       <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>NNPC Recruitment Portal</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="Access Solutions" name="author" />
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="stylesheet" href="assets/css/morris.css">
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.5.95/css/materialdesignicons.min.css"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">     
+    </head>
+    <body>
+      <div id="wrapper">
+          <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="index.html" class="logo">
+                        <span>
+                            <img src="assets/images/logo-light.png" alt="" height="50">
+                        </span>
+                        <i>
+                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                        </i>
+                    </a>
+                </div>
+
+                <nav class="navbar-custom">
+                    <ul class="navbar-right d-flex list-inline float-right mb-0">
+                        <li class="dropdown notification-list d-none d-sm-block">
+                            <form role="search" class="app-search">
+                                <div class="form-group mb-0"> 
+                                    <input type="text" class="form-control" placeholder="Search..">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form> 
+                        </li>
+                        <li class="dropdown notification-list">
+                            <div class="dropdown notification-list nav-pro-img">
+                                <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <img src="assets/images/logo.png" alt="user" class="rounded-circle">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                    <!-- item-->
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-wallet m-r-5"></i> My Wallet</a>
+                                    <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings m-r-5"></i> Settings</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5"></i> Lock screen</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a>
+                                </div>                                                                    
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left">
+                            <button class="button-menu-mobile open-left waves-effect">
+                                <i class="mdi mdi-menu"></i>
+                            </button>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            </div>
+            <!-- Top Bar End -->
+
+              <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu" id="side-menu">
+                            <!-- <li class="menu-title">Main Menu</li>-->
+                            <li>
+                                <a href="/" class="waves-effect">
+                                    <i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span>
+                                </a>
+                            </li>
+                            <li class="menu-title">User Ops</li>
+                            <li>
+                                <a href="/" class="waves-effect">
+                                    <i class="mdi mdi-account-group"></i> <span> Applicants' List </span>
+                                </a>
+                            </li>
+                            <li class="menu-title">Administrative Ops</li>
+                            <li>
+                                <a href="/" class="waves-effect">
+                                    <i class="mdi mdi-account-multiple-check"></i> <span> Assign Applicants</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" class="waves-effect">
+                                    <i class="mdi mdi-certificate"></i> <span> Certificate Requirements </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" class="waves-effect">
+                                    <i class="mdi mdi-account-details"></i> <span> User List </span>
+                                </a>
+                            </li>
+                            <li class="menu-title">General Ops</li>
+                            <li>
+                                    <a href="/" class="waves-effect">
+                                        <i class="mdi mdi-view-dashboard"></i><span> Change Password </span>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="/" class="waves-effect">
+                                        <i class="mdi mdi-power"></i><span> Logout </span>
+                                    </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+ 
+           
+        <div class="content-page">
+        
+            <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="page-title-box">
+                                    <h4 class="page-title">Dashboard</h4>
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item active">
+                                            Home
+                                        </li>
+                                    </ol>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                                <div class="col-xl-3 col-md-6">
+                                    <div class="card mini-stat color1">
+                                        <div class="card-body mini-stat-img">
+                                            <div class="mini-stat-icon">
+                                                <i class="mdi mdi-cube-outline float-right"></i>
+                                            </div>
+                                            <div class="text-white">
+                                                <h6 class="text-uppercase mb-3">Total Applicants</h6>
+                                                <h4 class="mb-4">1,587</h4>
+                                                <span class="ml-2">As at 2019-03-04</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-md-6">
+                                    <div class="card mini-stat color1">
+                                        <div class="card-body mini-stat-img">
+                                            <div class="mini-stat-icon">
+                                                <i class="mdi mdi-buffer float-right"></i>
+                                            </div>
+                                            <div class="text-white">
+                                                <h6 class="text-uppercase mb-3">Pending Reviews</h6>
+                                                <h4 class="mb-4">782</h4>
+                                                 <span class="ml-2">As at 2019-03-04</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-md-6">
+                                    <div class="card mini-stat color1">
+                                        <div class="card-body mini-stat-img">
+                                            <div class="mini-stat-icon">
+                                                <i class="mdi mdi-tag-text-outline float-right"></i>
+                                            </div>
+                                            <div class="text-white">
+                                                <h6 class="text-uppercase mb-3">Flagged</h6>
+                                                <h4 class="mb-4">159</h4>
+                                                <span class="ml-2">As at 2019-03-04</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-md-6">
+                                    <div class="card mini-stat color1">
+                                        <div class="card-body mini-stat-img">
+                                            <div class="mini-stat-icon">
+                                                <i class="mdi mdi-briefcase-check float-right"></i>
+                                            </div>
+                                            <div class="text-white">
+                                                <h6 class="text-uppercase mb-3">Shortlisted</h6>
+                                                <h4 class="mb-4">1890</h4>
+                                                <span class="ml-2">As at 2019-03-04</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+            
+                            <div class="row">
+            
+                                <div class="col-xl-4">
+                                    <div class="card m-b-20">
+                                        <div class="card-body">
+                                            <h4 class="mt-0 header-title">Applicant Status</h4>
+            
+                                            <div id="chart1" style="min-width: 310px; max-width: 600px; margin: 0 auto"></div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-xl-4">
+                                    <div class="card m-b-20">
+                                        <div class="card-body">
+                                            <h4 class="mt-0 header-title">State Distribution</h4>
+            
+                                            <div id="chart2" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-xl-4">
+                                    <div class="card m-b-20">
+                                        <div class="card-body">
+                                            <h4 class="mt-0 header-title">Reviewer's activity</h4>
+            
+                                            <div id="chart3" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                            <!-- end row -->
+
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card m-b-20">
+                                        <div class="card-body">
+                                            <h4 class="mt-0 m-b-30 header-title">Registration Summary By States</h4>
+            
+                                            <div id="chart2" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card m-b-20">
+                                        <div class="card-body">
+                                            <h4 class="mt-0 m-b-30 header-title">Registration Summary By Geopolitical Zones</h4>
+            
+                                            <div id="chart2" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div> <!-- container-fluid -->
+                </div> <!-- content -->
+
+                
+        </div>
+        
+ <footer class="footer">
+                        © 2019 Nigerian National Petroleum Corporation - All rights reserved.
+                </footer>
+
+    
+      </div>
+
+     <script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/metisMenu.min.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/waves.min.js"></script>
+<script src="assets/js/jquery.sparkline.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="assets/js/charts.js"></script>
+     
+    <!--Morris Chart-->
+    <script src="assets/js/morris.min.js"></script>
+    <script src="assets/js/raphael-min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+
+      <!-- App js -->
+     <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

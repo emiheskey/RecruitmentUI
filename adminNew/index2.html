@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+       <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>NNPC Recruitment Portal</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="Access Solutions" name="author" />
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="stylesheet" href="assets/css/morris.css">
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/themify-icons/themify-icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.5.95/css/materialdesignicons.min.css"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">     
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Navigation Bar-->
+    <header id="topnav">
+      <div class="topbar-main">
+          <div class="container-fluid">
+  
+              <!-- Logo container-->
+              <div class="logo">
+                  
+                  <a href="/" class="logo">
+                      <img src="assets/images/logo-sm.png" alt="" class="logo-small">
+                      <img src="assets/images/logo.png" alt="" class="logo-large">
+                  </a>
+  
+              </div>
+              <!-- End Logo container-->
+  
+  
+              <div class="menu-extras topbar-custom">
+  
+                  <ul class="float-right list-unstyled mb-0 ">
+                      
+                      <li class="dropdown notification-list d-none d-sm-block">
+                          <form role="search" class="app-search">
+                              <div class="form-group mb-0"> 
+                                  <input type="text" class="form-control" placeholder="Search..">
+                                  <button type="submit"><i class="fa fa-search"></i></button>
+                              </div>
+                          </form> 
+                      </li>
+
+                      <li class="dropdown notification-list">
+                          <div class="dropdown notification-list nav-pro-img">
+                              <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                  <img src="assets/images/logo.png" alt="user" class="rounded-circle">
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                  <!-- item-->
+                                  <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a>
+                                  <a class="dropdown-item" href="#"><i class="mdi mdi-wallet m-r-5"></i> My Wallet</a>
+                                  <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings m-r-5"></i> Settings</a>
+                                  <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5"></i> Lock screen</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a>
+                              </div>                                                                    
+                          </div>
+                      </li>
+                      <li class="menu-item">
+                          <!-- Mobile menu toggle-->
+                          <a class="navbar-toggle nav-link" id="mobileToggle">
+                              <div class="lines">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                              </div>
+                          </a>
+                          <!-- End mobile menu toggle-->
+                      </li>    
+                  </ul>
+              </div>
+              <!-- end menu-extras -->
+  
+              <div class="clearfix"></div>
+  
+          </div> <!-- end container -->
+      </div>
+      <!-- end topbar-main -->
+  
+      <div class="container-fluid">
+          <!-- Page-Title -->
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="page-title-box">
+                      <h4 class="page-title">Dashboard</h4>
+                      <ol class="breadcrumb">
+                          <li class="breadcrumb-item active">
+                              Home
+                          </li>
+                      </ol>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- MENU Start -->
+      <div class="navbar-custom">
+          <div class="container-fluid">
+              <div id="navigation">
+                  <!-- Navigation Menu-->
+                  <ul class="navigation-menu">
+  
+                      <li class="has-submenu">
+                          <a href="/">
+                              <i class="ti-dashboard"></i>
+                              <span>Dashboard</span>
+                          </a>
+                      </li>
+  
+                      <li class="has-submenu">
+                          <a href="#"><i class="ti-user"></i>User Ops</a>
+                          <ul class="submenu">
+                              <li><a href="#">Applicants' List</a></li>
+                          </ul>
+                      </li>
+  
+                      <li class="has-submenu">
+                          <a href="#"><i class="ti-agenda"></i>Administrative Ops</a>
+                          <ul class="submenu">
+                                <li><a href="#">Assign Applicants to Reviewers</a></li>
+                                <li><a href="#">Certificate Requirements</a></li>
+                                <li><a href="#">User List</a></li>
+                            </ul>
+                      </li>
+                      <li class="has-submenu">
+                          <a href="#"><i class="ti-receipt"></i>General Ops</a>
+                          <ul class="submenu">
+                              <li><a href="#">Change Password</a></li>
+                          </ul>
+                      </li>
+                      <li class="has-submenu">
+                            <a href="/">
+                                <i class="ti-power-off"></i>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                  </ul>
+                  <!-- End navigation menu -->
+              </div> <!-- end navigation -->
+          </div> <!-- end container-fluid -->
+      </div> <!-- end navbar-custom -->
+  </header>
+  <!-- End Navigation Bar-->
+          
+          
+  
+  <div class="wrapper">
+        <div class="container-fluid">
+                
+                <div class="row">
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card mini-stat color1">
+                                <div class="card-body mini-stat-img">
+                                    <div class="mini-stat-icon">
+                                        <i class="mdi mdi-cube-outline float-right"></i>
+                                    </div>
+                                    <div class="text-white">
+                                        <h6 class="text-uppercase mb-3">Total Applicants</h6>
+                                        <h4 class="mb-4">1,587</h4>
+                                        <span class="ml-2">As at 2019-03-04</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card mini-stat color1">
+                                <div class="card-body mini-stat-img">
+                                    <div class="mini-stat-icon">
+                                        <i class="mdi mdi-buffer float-right"></i>
+                                    </div>
+                                    <div class="text-white">
+                                        <h6 class="text-uppercase mb-3">Pending Reviews</h6>
+                                        <h4 class="mb-4">782</h4>
+                                         <span class="ml-2">As at 2019-03-04</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card mini-stat color1">
+                                <div class="card-body mini-stat-img">
+                                    <div class="mini-stat-icon">
+                                        <i class="mdi mdi-tag-text-outline float-right"></i>
+                                    </div>
+                                    <div class="text-white">
+                                        <h6 class="text-uppercase mb-3">Flagged</h6>
+                                        <h4 class="mb-4">159</h4>
+                                        <span class="ml-2">As at 2019-03-04</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card mini-stat color1">
+                                <div class="card-body mini-stat-img">
+                                    <div class="mini-stat-icon">
+                                        <i class="mdi mdi-briefcase-check float-right"></i>
+                                    </div>
+                                    <div class="text-white">
+                                        <h6 class="text-uppercase mb-3">Shortlisted</h6>
+                                        <h4 class="mb-4">1890</h4>
+                                        <span class="ml-2">As at 2019-03-04</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+    
+                    <div class="row">
+    
+                        <div class="col-xl-4">
+                            <div class="card m-b-20">
+                                <div class="card-body">
+                                    <h4 class="mt-0 header-title">Applicant Status</h4>
+    
+                                    <div id="chart1" style="min-width: 310px; max-width: 600px; margin: 0 auto"></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-4">
+                            <div class="card m-b-20">
+                                <div class="card-body">
+                                    <h4 class="mt-0 header-title">State Distribution</h4>
+    
+                                    <div id="chart2" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-4">
+                            <div class="card m-b-20">
+                                <div class="card-body">
+                                    <h4 class="mt-0 header-title">Reviewer's activity</h4>
+    
+                                    <div id="chart3" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card m-b-20">
+                                <div class="card-body">
+                                    <h4 class="mt-0 m-b-30 header-title">Registration Summary By States</h4>
+    
+                                    <div id="chart2" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card m-b-20">
+                                <div class="card-body">
+                                    <h4 class="mt-0 m-b-30 header-title">Registration Summary By Geopolitical Zones</h4>
+    
+                                    <div id="chart2" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div> <!-- container-fluid -->
+  </div>
+  <!-- end wrapper -->
+                  
+         
+          <footer class="footer">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-12">
+                    © 2019 Nigerian National Petroleum Corporation - All rights reserved.
+                  </div>
+              </div>
+          </div>
+      </footer>
+        </div>
+
+     <script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/metisMenu.min.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/waves.min.js"></script>
+<script src="assets/js/jquery.sparkline.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="assets/js/charts.js"></script>
+     
+    <!--Morris Chart-->
+    <script src="assets/js/morris.min.js"></script>
+    <script src="assets/js/raphael-min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+
+      <!-- App js -->
+     <script src="assets/js/app.js"></script>
+
+    </body>
+</html>
