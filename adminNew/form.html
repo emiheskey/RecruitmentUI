@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+       <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>NNPC Recruitment Portal</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="Access Solutions" name="author" />
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="stylesheet" href="assets/css/morris.css">
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/themify-icons/themify-icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Navigation Bar-->
+    <header id="topnav">
+      <div class="topbar-main">
+          <div class="container-fluid">
+            <div class="row">
+            <div class="col-2">
+               <!-- Logo container-->
+              <div class="logo">
+                  
+                    <a href="/" class="logo">
+                        <img src="assets/images/logo-sm.png" alt="" class="logo-small">
+                        <img src="assets/images/logo.png" alt="" class="logo-large">
+                    </a>
+    
+                </div>
+                <!-- End Logo container-->
+            </div>
+            <!-- Navigation Menu-->
+            <div class="col-8">
+                <ul class="navigation-menu">
+
+                    <li class="has-submenu">
+                        <a href="/">
+                            <i class="ti-dashboard"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#"><i class="ti-user"></i>User Ops</a>
+                        <ul class="submenu">
+                            <li><a href="#">Applicants' List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#"><i class="ti-agenda"></i>Administrative Ops</a>
+                        <ul class="submenu">
+                                <li><a href="#">Assign Applicants to Reviewers</a></li>
+                                <li><a href="#">Certificate Requirements</a></li>
+                                <li><a href="#">User List</a></li>
+                            </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#"><i class="ti-receipt"></i>General Ops</a>
+                        <ul class="submenu">
+                            <li><a href="#">Change Password</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                            <a href="/">
+                                <i class="ti-power-off"></i>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                    <div class="menu-extras topbar-custom">
+  
+                            <ul class="float-right list-unstyled mb-0 ">
+                                <li class="dropdown notification-list">
+                                    <div class="dropdown notification-list nav-pro-img">
+                                        <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                            <img src="assets/images/logo.png" alt="user" class="rounded-circle">
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                            <!-- item-->
+                                            <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a>
+                                            <a class="dropdown-item" href="#"><i class="mdi mdi-wallet m-r-5"></i> My Wallet</a>
+                                            <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings m-r-5"></i> Settings</a>
+                                            <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5"></i> Lock screen</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a>
+                                        </div>                                                                    
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <!-- Mobile menu toggle-->
+                                    <a class="navbar-toggle nav-link" id="mobileToggle">
+                                        <div class="lines">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </a>
+                                    <!-- End mobile menu toggle-->
+                                </li>    
+                            </ul>
+                        </div>
+                        <!-- end menu-extras -->
+                </div>
+            </div>
+  
+              <div class="clearfix"></div>
+  
+          </div> <!-- end container -->
+      </div>
+      <!-- end topbar-main -->
+  
+      <div class="container-fluid">
+          <!-- Page-Title -->
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="page-title-box">
+                      <h4 class="page-title">Dashboard</h4>
+                      <ol class="breadcrumb">
+                          <li class="breadcrumb-item active">
+                              Home
+                          </li>
+                      </ol>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </header>
+  <!-- End Navigation Bar-->
+          
+          
+  
+  <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card m-b-20">
+                        <div class="card-body">
+    
+                            <h4 class="mt-0 header-title">Textual inputs</h4>
+                            <p class="text-muted m-b-30 ">Here are examples of <code
+                                    class="highlighter-rouge">.form-control</code> applied to each
+                                textual HTML5 <code class="highlighter-rouge">&lt;input&gt;</code> <code
+                                        class="highlighter-rouge">type</code>.</p>
+    
+                            <div class="form-group row">
+                                <label for="example-text-input" class="col-sm-2 col-form-label">Text</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="example-email-input" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="example-tel-input" class="col-sm-2 col-form-label">Telephone</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="example-password-input" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="password" value="hunter2" id="example-password-input">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="example-number-input" class="col-sm-2 col-form-label">Number</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="number" value="42" id="example-number-input">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="example-date-input" class="col-sm-2 col-form-label">Date</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="example-time-input" class="col-sm-2 col-form-label">Time</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="time" value="13:45:00" id="example-time-input">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Select</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                        <option>Large select</option>
+                                        <option>Small select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Custom Select</label>
+                                <div class="col-sm-10">
+                                    <select class="custom-select">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="example-text-input-lg" class="col-sm-2 col-form-label">Large</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="example-text-input-lg">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="example-text-input-sm" class="col-sm-2 col-form-label">Small</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="example-text-input-sm">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <!-- Css Buttons -->
+                            
+                        </div>
+                    </div>
+                </div> <!-- end col -->
+                <div class="col-lg-6">
+                        <div class="card m-b-20">
+                            <div class="card-body">
+                                
+                                <h4 class="mt-0 header-title">Datepicker</h4>
+                                <p class="text-muted m-b-30 ">Examples of twitter bootstrap datepicker.</p>
+        
+                                <form action="#">
+                                    <div class="form-group">
+                                        <label>Default Functionality</label>
+                                        <div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                </div>
+                                            </div><!-- input-group -->
+                                        </div>
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label>Auto Close</label>
+                                        <div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker-autoclose">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                </div>
+                                            </div><!-- input-group -->
+                                        </div>
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label>Multiple Date</label>
+                                        <div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker-multiple-date">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                </div>
+                                            </div><!-- input-group -->
+                                        </div>
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label>Date Range</label>
+                                        <div>
+                                            <div class="input-daterange input-group" id="date-range">
+                                                <input type="text" class="form-control" name="start" />
+                                                <input type="text" class="form-control" name="end" />
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                </form>
+                                <h4 class="mt-0 header-title">Css Switch</h4>
+                        <p class="text-muted m-b-30 ">Here are a few types of switches. </p>
+
+                        <div>
+                            <input type="checkbox" id="switch1" switch="none" checked/>
+                            <label for="switch1" data-on-label="On"
+                                    data-off-label="Off"></label>
+
+                            <input type="checkbox" id="switch2" switch="default" checked/>
+                            <label for="switch2" data-on-label=""
+                                    data-off-label=""></label>
+
+                            <input type="checkbox" id="switch3" switch="bool" checked/>
+                            <label for="switch3" data-on-label="Yes"
+                                    data-off-label="No"></label>
+
+                            <input type="checkbox" id="switch6" switch="primary" checked/>
+                            <label for="switch6" data-on-label="Yes"
+                                    data-off-label="No"></label>
+
+                            <input type="checkbox" id="switch4" switch="success" checked/>
+                            <label for="switch4" data-on-label="Yes"
+                                    data-off-label="No"></label>
+
+                            <input type="checkbox" id="switch7" switch="info" checked/>
+                            <label for="switch7" data-on-label="Yes"
+                                    data-off-label="No"></label>
+
+                            <input type="checkbox" id="switch5" switch="warning" checked/>
+                            <label for="switch5" data-on-label="Yes"
+                                    data-off-label="No"></label>
+
+                            <input type="checkbox" id="switch8" switch="danger" checked/>
+                            <label for="switch8" data-on-label="Yes"
+                                    data-off-label="No"></label>
+
+                            <input type="checkbox" id="switch9" switch="dark" checked/>
+                            <label for="switch9" data-on-label="Yes"
+                                    data-off-label="No"></label>
+
+                            </div>
+                        </div>
+        
+         <!-- end col -->
+            </div> <!-- end row -->
+        </div> <!-- container-fluid -->
+  </div>
+  <!-- end wrapper -->
+                  
+         
+          <footer class="footer">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-12">
+                    © 2019 Nigerian National Petroleum Corporation - All rights reserved.
+                  </div>
+              </div>
+          </div>
+      </footer>
+        </div>
+
+     <script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/metisMenu.min.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/waves.min.js"></script>
+<script src="assets/js/jquery.sparkline.min.js"></script>
+<script src="assets/js/bootstrap-datepicker.js"></script>
+      <!-- App js -->
+     <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

@@ -18,139 +18,126 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">     
     </head>
     <body>
-        <div id="wrapper">
-            <!-- Navigation Bar-->
-    <header id="topnav">
-      <div class="topbar-main">
-          <div class="container-fluid">
-  
-              <!-- Logo container-->
-              <div class="logo">
-                  
-                  <a href="/" class="logo">
-                      <img src="assets/images/logo-sm.png" alt="" class="logo-small">
-                      <img src="assets/images/logo.png" alt="" class="logo-large">
-                  </a>
-  
+            <div id="wrapper">
+                    <!-- Navigation Bar-->
+            <header id="topnav">
+              <div class="topbar-main">
+                  <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-2">
+                       <!-- Logo container-->
+                      <div class="logo">
+                          
+                            <a href="/" class="logo">
+                                <img src="assets/images/logo-sm.png" alt="" class="logo-small">
+                                <img src="assets/images/logo.png" alt="" class="logo-large">
+                            </a>
+            
+                        </div>
+                        <!-- End Logo container-->
+                    </div>
+                    <!-- Navigation Menu-->
+                    <div class="col-8">
+                        <ul class="navigation-menu">
+        
+                            <li class="has-submenu">
+                                <a href="/">
+                                    <i class="ti-dashboard"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+        
+                            <li class="has-submenu">
+                                <a href="#"><i class="ti-user"></i>User Ops</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Applicants' List</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="has-submenu">
+                                <a href="#"><i class="ti-agenda"></i>Administrative Ops</a>
+                                <ul class="submenu">
+                                        <li><a href="#">Assign Applicants to Reviewers</a></li>
+                                        <li><a href="#">Certificate Requirements</a></li>
+                                        <li><a href="#">User List</a></li>
+                                    </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="ti-receipt"></i>General Ops</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Change Password</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                    <a href="/">
+                                        <i class="ti-power-off"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                            <div class="menu-extras topbar-custom">
+          
+                                    <ul class="float-right list-unstyled mb-0 ">
+                                        <li class="dropdown notification-list">
+                                            <div class="dropdown notification-list nav-pro-img">
+                                                <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                                    <img src="assets/images/logo.png" alt="user" class="rounded-circle">
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                                    <!-- item-->
+                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a>
+                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-wallet m-r-5"></i> My Wallet</a>
+                                                    <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings m-r-5"></i> Settings</a>
+                                                    <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5"></i> Lock screen</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a>
+                                                </div>                                                                    
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <!-- Mobile menu toggle-->
+                                            <a class="navbar-toggle nav-link" id="mobileToggle">
+                                                <div class="lines">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </a>
+                                            <!-- End mobile menu toggle-->
+                                        </li>    
+                                    </ul>
+                                </div>
+                                <!-- end menu-extras -->
+                        </div>
+                    </div>
+          
+                      <div class="clearfix"></div>
+          
+                  </div> <!-- end container -->
               </div>
-              <!-- End Logo container-->
-  
-  
-              <div class="menu-extras topbar-custom">
-  
-                  <ul class="float-right list-unstyled mb-0 ">
-                      
-                      <li class="dropdown notification-list d-none d-sm-block">
-                          <form role="search" class="app-search">
-                              <div class="form-group mb-0"> 
-                                  <input type="text" class="form-control" placeholder="Search..">
-                                  <button type="submit"><i class="fa fa-search"></i></button>
-                              </div>
-                          </form> 
-                      </li>
-
-                      <li class="dropdown notification-list">
-                          <div class="dropdown notification-list nav-pro-img">
-                              <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                  <img src="assets/images/logo.png" alt="user" class="rounded-circle">
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
-                                  <!-- item-->
-                                  <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a>
-                                  <a class="dropdown-item" href="#"><i class="mdi mdi-wallet m-r-5"></i> My Wallet</a>
-                                  <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings m-r-5"></i> Settings</a>
-                                  <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5"></i> Lock screen</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a>
-                              </div>                                                                    
+              <!-- end topbar-main -->
+          
+              <div class="container-fluid">
+                  <!-- Page-Title -->
+                  <div class="row">
+                      <div class="col-sm-12">
+                          <div class="page-title-box">
+                              <h4 class="page-title">Dashboard</h4>
+                              <ol class="breadcrumb">
+                                  <li class="breadcrumb-item active">
+                                      Home
+                                  </li>
+                              </ol>
+                              
                           </div>
-                      </li>
-                      <li class="menu-item">
-                          <!-- Mobile menu toggle-->
-                          <a class="navbar-toggle nav-link" id="mobileToggle">
-                              <div class="lines">
-                                  <span></span>
-                                  <span></span>
-                                  <span></span>
-                              </div>
-                          </a>
-                          <!-- End mobile menu toggle-->
-                      </li>    
-                  </ul>
-              </div>
-              <!-- end menu-extras -->
-  
-              <div class="clearfix"></div>
-  
-          </div> <!-- end container -->
-      </div>
-      <!-- end topbar-main -->
-  
-      <div class="container-fluid">
-          <!-- Page-Title -->
-          <div class="row">
-              <div class="col-sm-12">
-                  <div class="page-title-box">
-                      <h4 class="page-title">Dashboard</h4>
-                      <ol class="breadcrumb">
-                          <li class="breadcrumb-item active">
-                              Home
-                          </li>
-                      </ol>
-                      
+                      </div>
                   </div>
               </div>
-          </div>
-      </div>
-  
-      <!-- MENU Start -->
-      <div class="navbar-custom">
-          <div class="container-fluid">
-              <div id="navigation">
-                  <!-- Navigation Menu-->
-                  <ul class="navigation-menu">
-  
-                      <li class="has-submenu">
-                          <a href="/">
-                              <i class="ti-dashboard"></i>
-                              <span>Dashboard</span>
-                          </a>
-                      </li>
-  
-                      <li class="has-submenu">
-                          <a href="#"><i class="ti-user"></i>User Ops</a>
-                          <ul class="submenu">
-                              <li><a href="#">Applicants' List</a></li>
-                          </ul>
-                      </li>
-  
-                      <li class="has-submenu">
-                          <a href="#"><i class="ti-agenda"></i>Administrative Ops</a>
-                          <ul class="submenu">
-                                <li><a href="#">Assign Applicants to Reviewers</a></li>
-                                <li><a href="#">Certificate Requirements</a></li>
-                                <li><a href="#">User List</a></li>
-                            </ul>
-                      </li>
-                      <li class="has-submenu">
-                          <a href="#"><i class="ti-receipt"></i>General Ops</a>
-                          <ul class="submenu">
-                              <li><a href="#">Change Password</a></li>
-                          </ul>
-                      </li>
-                      <li class="has-submenu">
-                            <a href="/">
-                                <i class="ti-power-off"></i>
-                                <span>Logout</span>
-                            </a>
-                        </li>
-                  </ul>
-                  <!-- End navigation menu -->
-              </div> <!-- end navigation -->
-          </div> <!-- end container-fluid -->
-      </div> <!-- end navbar-custom -->
-  </header>
-  <!-- End Navigation Bar-->
+        
+          </header>
+          <!-- End Navigation Bar-->
           
           
   
