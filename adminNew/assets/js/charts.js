@@ -181,51 +181,31 @@ Highcharts.chart('geopolitical', {
   // REVIEWERS ACTIVITY
   Highcharts.chart('reviewer', {
     chart: {
-      type: 'variablepie'
+      type: 'pie',
+      options3d: {
+        enabled: true,
+        alpha: 45
+      }
     },
     title: {
-      text: 'Countries compared by population density and total area.'
+      text: ''
     },
-    tooltip: {
-      headerFormat: '',
-      pointFormat: '<span style="color:{point.color}">●</span> <b> {point.name}</b><br/>' +
-        'Area (square km): <b>{point.y}</b><br/>' +
-        'Population density (people per square km): <b>{point.z}</b><br/>'
+    subtitle: {
+      text: 'As 20/03/2019'
+    },
+    plotOptions: {
+      pie: {
+        innerSize: 50,
+        depth: 45
+      }
     },
     series: [{
-      minPointSize: 10,
-      innerSize: '20%',
-      zMin: 0,
-      name: 'countries',
-      data: [{
-        name: 'Spain',
-        y: 505370,
-        z: 92.9
-      }, {
-        name: 'France',
-        y: 551500,
-        z: 118.7
-      }, {
-        name: 'Poland',
-        y: 312685,
-        z: 124.6
-      }, {
-        name: 'Czech Republic',
-        y: 78867,
-        z: 137.5
-      }, {
-        name: 'Italy',
-        y: 301340,
-        z: 201.8
-      }, {
-        name: 'Switzerland',
-        y: 41277,
-        z: 214.5
-      }, {
-        name: 'Germany',
-        y: 357022,
-        z: 235.6
-      }]
+      name: 'Activity',
+      data: [
+        ['Reviewed', 8],
+        ['Pending', 3],
+        ['Flagged', 1],
+        ['Escalted', 2]
+      ]
     }]
   });
-  
