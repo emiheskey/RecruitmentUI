@@ -167,7 +167,7 @@ a:focus {
 }
 
 .bg-primary {
-  background-color: #4A9F48 !important;
+  background-color: rgb(41, 42, 109) !important;
 }
 
 .bg-success {
@@ -3111,6 +3111,17 @@ table.focus-on tbody tr.focused td {
   color: #ffffff !important;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+}
+.mini-stat-icon i {
+  font-size: 30px;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: inherit;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
   display: inline-block;
 }
 
